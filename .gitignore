@@ -13,3 +13,7 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# Visual Studio Code Workspaces
+*.code-workspace
+*.DS_Store

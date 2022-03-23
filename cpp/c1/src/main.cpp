@@ -41,12 +41,12 @@ void LoadJsonConfig()
     }
 	infile.close();
 
-	if (config["SeraServerIp"] != nullptr) {
-        string strAddr = config["SeraServerIp"];
+	if (config["ServerIp"] != nullptr) {
+        string strAddr = config["ServerIp"];
 		destAddr = inet_addr(strAddr.c_str());
 	}
-	if (config["SeraServerPort"] != nullptr) {
-		destPort = config["SeraServerPort"];
+	if (config["ServerPort"] != nullptr) {
+		destPort = config["ServerPort"];
 	}
 	if (config["SimId"] != nullptr) {
 		simID = config["SimId"];
@@ -69,8 +69,8 @@ void LoadJsonConfig()
 			if (obj["PreparedScenario"] != nullptr) {
 				value = obj["PreparedScenario"];
 			}
-			if (obj["SeraScenario"] != nullptr) {
-				key = obj["SeraScenario"];
+			if (obj["Scenario"] != nullptr) {
+				key = obj["Scenario"];
 				// key.resize(128, ' ');
 			}
             countedMaps++;

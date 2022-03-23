@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0",
+    "tasks": [
+        {
+            "label": "build app",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g", "src/main.cpp",
+                "-o", "build/calibration.out",
+                "-std=c++11",
+                "-I/home/linuxbrew/.linuxbrew/Cellar/nlohmann_json/3.1.2/include"
+            ]
+        }
+        }
+    ]
+}

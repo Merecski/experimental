@@ -17,7 +17,7 @@ type testStruct struct {
 
 var iter = 100000
 
-func main() {
+func test1() {
 	log.SetFlags(log.Lshortfile)
 	log.Println("hi?")
 	x := &testStruct{
@@ -56,4 +56,8 @@ func main() {
 	close(start)
 	<-finish
 	<-finish
+}
+
+func main() {
+
 }

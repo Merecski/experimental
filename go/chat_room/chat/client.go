@@ -22,7 +22,7 @@ func (c *client) readInput() {
 		}
 
 		msg = strings.Trim(msg, "\r\n")
-		if msg[0] == "/" {
+		if string(msg[0]) == "/" {
 			args := strings.Split(msg, " ")
 			cmd := strings.TrimSpace(args[0])
 
